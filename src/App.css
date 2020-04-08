@@ -1,5 +1,28 @@
 .App {
-  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.App .Header {
+  padding: 10px 5px;
+  display: flex;
+  border: 1px solid #eee;
+}
+
+.App .Header input {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+}
+
+.App .Header input:focus {
+  outline: none;
 }
 
 .App-logo {
@@ -24,8 +47,50 @@
   color: white;
 }
 
+.Footer {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+}
+
 .App-link {
   color: #61dafb;
+}
+.Footer > div:nth-child(2) > button {
+  color: #777;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Footer > div:nth-child(2) > button:hover {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+}
+
+.Footer > div:nth-child(2) > button:focus {
+  outline: none;
+  border: 1px solid rgba(175, 47, 47, 0.2);
+}
+
+.Footer > div:last-child > button {
+  color: #777;
+  border: none;
+  cursor: pointer;
+}
+
+.Footer > div:last-child > button:hover {
+  text-decoration: underline;
+}
+
+.Footer > div:last-child > button:focus {
+  outline: none;
+}
+
+.clearComplete {
+  opacity: 0;
 }
 
 @keyframes App-logo-spin {
