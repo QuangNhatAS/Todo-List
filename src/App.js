@@ -157,7 +157,7 @@ class App extends Component {
               <button onClick={this.showActive}>Active</button>
               <button onClick={this.showComplete}>Completed</button>
             </div>
-            <div class={classClearComplete}>
+            <div className={classClearComplete}>
               <button onClick={this.clearComplete}>Clear Completed</button>
             </div>
           </div>
